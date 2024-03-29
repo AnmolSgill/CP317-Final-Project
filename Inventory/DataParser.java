@@ -11,6 +11,10 @@ public class DataParser {
             if (fields.length != 7) {
                 throw new IllegalArgumentException("Invalid number of fields in product line: " + line);
             }
+            // Validate productName and description
+            if (!fields[1].trim().matches("[a-zA-Z .]+") || !fields[2].trim().matches("[a-zA-Z .]+")) {
+                throw new IllegalArgumentException("Product name or description contains invalid characters: " + line);
+            }
             for (String field : fields) {
                 if (field.trim().isEmpty()) {
                     throw new IllegalArgumentException("Empty field found in product line: " + line);
@@ -55,6 +59,11 @@ public class DataParser {
             String[] fields = line.split(",");
             if (fields.length != 5) {
                 throw new IllegalArgumentException("Invalid number of fields in supplier line: " + line);
+            }
+            // Validate supplierName
+            // Validate supplierName
+            if (!fields[1].trim().matches("[a-zA-Z .]+")) {
+                throw new IllegalArgumentException("Supplier name contains invalid characters: " + line);
             }
             for (String field : fields) {
                 if (field.trim().isEmpty()) {

@@ -6,7 +6,7 @@ public class DataParserTest {
     public static void main(String[] args) {
         // Sample input data
         List<String> productLines = List.of(
-            "2591, Camera, Camera, $799.9, 50, A, 7890",
+            "2591, Camera, Camera, $799.9, 40, A, 7890",
             "3374, Laptop, MacBook Pro, $1799.9, 30, A, 9876",
             "3034, Telephone, Cordless Phone, $299.99, 40, A, 3456"
             // Add more sample product lines as needed

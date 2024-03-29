@@ -15,7 +15,7 @@ public class Supplier {
         this.email = email;
     }
 
-    public int getSupplierId() {
+    public int getSupplierID() {
         return supplierId;
     }
 

@@ -43,7 +43,7 @@ public class Product {
         return status;
     }
 
-    public int getSupplierId() {
+    public int getSupplierID() {
         return supplierId;
     }
 
