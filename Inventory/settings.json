@@ -1,0 +1,11 @@
+{
+    "java.test.config": {
+        "libraries": [
+            {
+                "name": "JUnit 4",
+                "path": "path/to/junit/jar", // Specify the path to your JUnit JAR file
+                "sources": "path/to/junit/sources/jar" // Optional: Specify the path to JUnit sources JAR file
+            }
+        ]
+    }
+}
