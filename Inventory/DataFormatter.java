@@ -1,6 +1,5 @@
 package Inventory;
 
-import java.io.IOException;
 import java.util.List;
 
 public class DataFormatter {
