@@ -3,7 +3,6 @@ package Inventory;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
-import java.util.ArrayList;
 import java.util.List;
 
 public class DataFormatterTest {
@@ -33,7 +32,7 @@ public class DataFormatterTest {
         DataFormatter dataFormatter = new DataFormatter();
 
         // Call the method to be tested
-        //dataFormatter.formatInventoryFile(products, suppliers);
+        // dataFormatter.formatInventoryFile(products, suppliers);
 
         // Verify the contents of the generated file
         try (BufferedReader reader = new BufferedReader(new FileReader("InventoryFile.txt"))) {

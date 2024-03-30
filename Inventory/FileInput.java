@@ -15,7 +15,7 @@ public class FileInput {
         this.supplierFilePath = supplierFilePath;
     }
 
-    public List<String> readProductFile() throws IOException {
+    public List<String> readProductFile() {
         List<String> lines = new ArrayList<>();
         try (BufferedReader reader = new BufferedReader(new FileReader(this.productFilePath))) {
             String line;
@@ -29,7 +29,7 @@ public class FileInput {
         return lines;
     }
 
-    public List<String> readSupplierFile() throws IOException {
+    public List<String> readSupplierFile() {
         List<String> lines = new ArrayList<>();
         try (BufferedReader reader = new BufferedReader(new FileReader(this.supplierFilePath))) {
             String line;

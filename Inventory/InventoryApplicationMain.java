@@ -2,11 +2,11 @@ package Inventory;
 
 import java.util.List;
 
-public class Main {
+public class InventoryApplicationMain{
     
     public static void main(String[] args) {
         if (args.length != 2) {
-            System.err.println("Usage: java Main <ProductFile.txt> <SupplierFile.txt>");
+            System.err.println("Usage: java InventoryApplicationMain <ProductFile File path> <SupplierFile File path>");
             return;
         }
 

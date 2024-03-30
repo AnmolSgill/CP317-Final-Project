@@ -35,24 +35,24 @@ public class DataFormatterAndOutputFileGeneratorTest {
         );
     }
 
-    // public void testOutputFileGeneration_Successful() {
-    //     // Parse the input files
-    //     List<Product> products = dataParser.parseProducts(productLines);
-    //     List<Supplier> suppliers = dataParser.parseSuppliers(supplierLines);
+    public void testOutputFileGeneration_Successful() {
+        // Parse the input files
+        List<Product> products = dataParser.parseProducts(productLines);
+        List<Supplier> suppliers = dataParser.parseSuppliers(supplierLines);
 
-    //     // Format the data
-    //     String formattedData = dataFormatter.formatInventoryData(products, suppliers);
+        // Format the data
+        String formattedData = dataFormatter.formatInventoryData(products, suppliers);
 
-    //     // Generate the output file
-    //     boolean fileGenerated = outputFileGenerator.writeToFile(formattedData, "InventoryFIle.txt");
+        // Generate the output file
+        boolean fileGenerated = outputFileGenerator.writeToFile(formattedData, "InventoryFIle.txt");
 
-    //     // Verify that the file was generated successfully
-    //     if (fileGenerated) {
-    //         System.out.println("Test: testOutputFileGeneration_Successful - PASSED");
-    //     } else {
-    //         System.out.println("Test: testOutputFileGeneration_Successful - FAILED");
-    //     }
-    // }
+        // Verify that the file was generated successfully
+        if (fileGenerated) {
+            System.out.println("Test: testOutputFileGeneration_Successful - PASSED");
+        } else {
+            System.out.println("Test: testOutputFileGeneration_Successful - FAILED");
+        }
+    }
 
     public void testOutputFileGeneration_ErrorInDataFormatting() {
         // In this test case, intentionally pass null as formatted data to simulate an error in data formatting
@@ -70,7 +70,7 @@ public class DataFormatterAndOutputFileGeneratorTest {
 
     public static void main(String[] args) {
         DataFormatterAndOutputFileGeneratorTest test = new DataFormatterAndOutputFileGeneratorTest();
-        // test.testOutputFileGeneration_Successful();
+        test.testOutputFileGeneration_Successful();
         test.testOutputFileGeneration_ErrorInDataFormatting();
     }
 }
