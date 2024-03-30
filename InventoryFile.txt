@@ -1,0 +1,4 @@
+Product ID, Product Name, Quantity, Price, Status, Supplier Name
+2591, Camera, 40, 799.9, A, Samsung
+3374, Laptop, 30, 1799.9, A, Toshiba
+3034, Telephone, 40, 299.99, A, Panasonic
