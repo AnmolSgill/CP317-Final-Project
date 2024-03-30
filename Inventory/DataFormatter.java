@@ -1,9 +1,13 @@
 package Inventory;
 
 import java.util.List;
+import java.util.Collections;
+import java.util.Comparator;
 
 public class DataFormatter {
     public String formatInventoryData(List<Product> products, List<Supplier> suppliers) {
+
+        Collections.sort(products, Comparator.comparingInt(Product::getProductId));
         StringBuilder formattedData = new StringBuilder();
         formattedData.append("Product ID, Product Name, Quantity, Price, Status, Supplier Name\n");
 

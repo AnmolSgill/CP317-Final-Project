@@ -8,6 +8,7 @@ public class DataParser {
         List<Product> products = new ArrayList<>();
         for (String line : productLines) {
             String[] fields = line.split(",");
+            // System.out.println(fields.length); for debugging
             if (fields.length != 7) {
                 throw new IllegalArgumentException("Invalid number of fields in product line: " + line);
             }
@@ -57,6 +58,7 @@ public class DataParser {
         List<Supplier> suppliers = new ArrayList<>();
         for (String line : supplierLines) {
             String[] fields = line.split(",");
+            // System.out.println(fields.length); For debugging
             if (fields.length != 5) {
                 throw new IllegalArgumentException("Invalid number of fields in supplier line: " + line);
             }

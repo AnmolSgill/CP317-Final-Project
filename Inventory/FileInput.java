@@ -17,7 +17,7 @@ public class FileInput {
 
     public List<String> readProductFile() {
         List<String> lines = new ArrayList<>();
-        try (BufferedReader reader = new BufferedReader(new FileReader(this.productFilePath))) {
+        try (BufferedReader reader = new BufferedReader(new FileReader(productFilePath))) {
             String line;
             while ((line = reader.readLine()) != null) {
                 lines.add(line);
@@ -31,7 +31,7 @@ public class FileInput {
 
     public List<String> readSupplierFile() {
         List<String> lines = new ArrayList<>();
-        try (BufferedReader reader = new BufferedReader(new FileReader(this.supplierFilePath))) {
+        try (BufferedReader reader = new BufferedReader(new FileReader(supplierFilePath))) {
             String line;
             while ((line = reader.readLine()) != null) {
                 lines.add(line);

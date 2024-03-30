@@ -5,13 +5,13 @@ import java.util.List;
 public class InventoryApplicationMain{
     
     public static void main(String[] args) {
-        if (args.length != 2) {
-            System.err.println("Usage: java InventoryApplicationMain <ProductFile File path> <SupplierFile File path>");
-            return;
-        }
+        // if (args.length != 2) {
+        //     System.err.println("Usage: java InventoryApplicationMain <ProductFile File path> <SupplierFile File path>");
+        //     return;
+        // }
 
-        String productFilePath = args[0];
-        String supplierFilePath = args[1];
+        String productFilePath = "/Users/anmol/Desktop/CP317/cp317 project code/Inventory/ProductFile.txt";
+        String supplierFilePath = "/Users/anmol/Desktop/CP317/cp317 project code/Inventory/SupplierFile.txt";
 
         // Initialize classes
         FileInput fileInput = new FileInput(productFilePath, supplierFilePath);
